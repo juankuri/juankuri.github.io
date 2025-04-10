@@ -1,1 +1,10 @@
-<p>languages works!</p>
+<section>
+    <h2>Idiomas</h2>
+    <div *ngFor="let language of languages" class="skill-bar">
+      <label>{{ language.name }}</label>
+      <div class="bar-container">
+        <div class="bar-fill" [style.width.%]="language.level"></div>
+      </div>
+    </div>
+  </section>
+  
