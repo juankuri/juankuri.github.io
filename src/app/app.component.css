@@ -1,0 +1,58 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  td {
+    padding: 0;
+    vertical-align: top;
+    border: 1px solid #ddd;
+  }
+  
+  /* Encabezado (header) */
+  tr:first-child td {
+    background-color: #F5F5F5;
+    border-bottom: 3px solid #800020;
+  }
+  
+  /* Fila principal con experiencia y habilidades */
+  tr:nth-child(2) td {
+    padding: 0;
+  }
+  
+  /* Filas adicionales */
+  tr:nth-child(n+3) td {
+    padding: 0;
+  }
+  
+  /* Responsividad para dispositivos móviles */
+  @media (max-width: 768px) {
+    table, tr, td {
+      display: block;
+      width: 100%;
+    }
+    
+    td {
+      margin-bottom: 15px;
+    }
+    
+    tr:first-child td {
+      border-bottom: none;
+    }
+  }
+  
+  /* Asegurar que los componentes internos tengan margen consistente */
+  app-header,
+  app-work-experience,
+  app-skills,
+  app-education,
+  app-certificates,
+  app-languages,
+  app-interests {
+    display: block;
+    padding: 0;
+  }

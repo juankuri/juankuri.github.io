@@ -1,1 +1,9 @@
-<p>skills works!</p>
+<section>
+    <h2>Habilidades y Competencias</h2>
+    <div *ngFor="let skill of skills" class="skill-bar">
+      <label>{{ skill.name }}</label>
+      <div class="bar-container">
+        <div class="bar-fill" [style.width.%]="skill.level"></div>
+      </div>
+    </div>
+  </section>

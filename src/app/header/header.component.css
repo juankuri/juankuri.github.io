@@ -1,0 +1,45 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5; 
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+td:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #800020; 
+}
+
+td:nth-child(2) img {
+    border-radius: 50%;
+    border: 5px solid #800020;
+}
+
+td:last-child {
+    font-size: 0.9em;
+    color: #555;
+}
+
+td:last-child strong {
+    font-weight: bold;
+    color: #800020;
+}
+
+td:last-child a {
+    color: #800020; 
+    text-decoration: none;
+}
+
+td:last-child a:hover {
+    text-decoration: underline;
+}
