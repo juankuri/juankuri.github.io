@@ -1,1 +1,7 @@
-<p>certificates works!</p>
+<section>
+    <h2>Logros y Certificados</h2>
+    <div *ngFor="let cert of certificates" class="certificate-entry">
+      <label><strong>{{ cert.title }}</strong></label><br>
+      <span>{{ cert.description }}</span>
+    </div>
+  </section>

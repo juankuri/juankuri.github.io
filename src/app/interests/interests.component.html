@@ -1,1 +1,11 @@
-<p>interests works!</p>
+<section>
+    <h2>Intereses</h2>
+    <div *ngFor="let interest of interests" class="interest-card">
+      <div class="interest-icon">{{ interest.icon }}</div>
+      <div class="interest-content">
+        <h3>{{ interest.title }}</h3>
+        <p>{{ interest.description }}</p>
+      </div>
+    </div>
+  </section>
+  
