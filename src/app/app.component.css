@@ -11,7 +11,21 @@ table {
     padding: 0;
     vertical-align: top;
     border: 1px solid #ddd;
+  }@media (max-width: 500px) {
+    .header-photo img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .header-info h1 {
+      font-size: 1.5em;
+    }
+  
+    .role {
+      font-size: 1em;
+    }
   }
+  
   
   /* Encabezado (header) */
   tr:first-child td {

@@ -1,15 +1,15 @@
-<tr>
-  <td>
-    {{header.name}} <br>
-    {{header.goalLife}}
-  </td>
-  <td>
-    <img src="{{header.photoUrl}}" width='200' height='200'>
-  </td>
-  <td>
-    <strong>Email:</strong> {{header.email}}<br>
-    <strong>Phone:</strong> {{header.phoneNumber}}<br>
-    <strong>Location:</strong> {{header.location}}<br>
-    <strong>Social Network:</strong> {{header.socialNetwork}}
-  </td>
-</tr>
+<div class="header-photo">
+  <img [src]="header.photoUrl" alt="Profile Photo">
+</div>
+<div class="header-info">
+  <h1>{{ header.name }}</h1>
+  <p class="role">{{ header.goalLife }}</p>
+  <div class="contact-info">
+    <p><strong>Email:</strong> {{ header.email }}</p>
+    <p><strong>Teléfono:</strong> {{ header.phoneNumber }}</p>
+    <p><strong>Ubicación:</strong> {{ header.location }}</p>
+    <p><strong>Red Social:</strong>
+       <a [href]="header.socialNetwork" target="_blank">{{ header.socialNetwork }}</a>
+    </p>
+  </div>
+</div>
